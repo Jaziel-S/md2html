@@ -6,8 +6,8 @@ import markdown
 import tkinter as tk
 from tkinter import filedialog
 
-
-# 打包建议：pyinstaller --onefile --windowed md2html2.py
+# 手动：pip install markdown python-markdown-math
+# 打包建议：pyinstaller --onefile --windowed --hidden-import=mdx_math md2html2.py
 
 def md_to_single_html_reader(md_path: str, html_path: str):
     with open(md_path, "r", encoding="utf-8") as f:
